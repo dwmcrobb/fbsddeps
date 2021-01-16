@@ -93,7 +93,7 @@ define(DWM_SVN_TAG,[
     SVN_VERSION=`echo [${svntag}] | awk -F '-' '{print $NF}'`
   else
     svn_vers=`svnversion . | sed 's/[[0-9]]*://g'`
-    if test "${svn_version}" = "Unversioned directory"; then
+    if test "${svn_vers}" = "Unversioned directory"; then
       SVN_VERSION="0.0.0"
     else
       SVN_VERSION="0.0.${svn_vers}"
