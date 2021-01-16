@@ -1,0 +1,11 @@
+name: "fbsddeps"
+version: "@DWM_VERSION@"
+origin: "sysutils/fbsddeps"
+prefix: "@prefix@"
+www: "http://www.mcplex.net"
+maintainer: "dwm@mcplex.net"
+comment: "Displays packages upon which a given binary file or library depends"
+desc: "Displays packages upon which a given binary file or library depends"
+licenselogic: "single"
+licenses: ["BSD"]
+categories: ["devel"]

@@ -1,0 +1,9 @@
+CXX              = @CXX@
+CXXFLAGS         = -std=c++17 @CXXFLAGS@ -pthread
+LDFLAGS          = @LDFLAGS@
+OSLIBS		 = @LIBS@ -lprivatesqlite3 -lssl -lcrypto
+OSNAME           = @OSNAME@
+PREFIXDIR	 = @prefix@
+TAG		 = @DWM_TAG@
+STAGING          = @STAGING@
+VERSION          = @DWM_VERSION@

@@ -1,0 +1,9 @@
+*~
+*.o
+autom4te.cache/**
+fbsddeps-*.txz
+Makefile.vars
+config.log
+config.status
+fbsd_manifest
+fbsddeps

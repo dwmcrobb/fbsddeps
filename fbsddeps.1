@@ -1,0 +1,44 @@
+.Dd April 10, 2017
+.Dt fbsddeps 1
+.Os
+.Sh NAME
+.Nm fbsddeps
+.Nd Display packages upon which a given binary file or library depends
+.Sh SYNOPSIS
+.Nm
+.Cm file(s)
+.Sh DESCRIPTION
+.Nm
+displays the FreeBSD packages upon which a given compiled binary or shared
+library depends.
+.Sh EXAMPLES
+View the dependencies of /usr/local/bin/dwmrdapc:
+.Bd -literal
+% fbsddeps /usr/local/bin/dwmrdapc
+/usr/local/bin/dwmrdapc:
+  cryptopp-5.6.5_1
+  expat-2.2.0_1
+  jsoncpp-1.8.0_2
+  libDwm-0.6.9
+  libDwmAuth-0.1.4
+  libDwmCfg2Json-0.1.2
+  pcre-8.40
+  poco-1.7.8
+.Ed
+
+View the dependencies of /usr/local/lib/libPocoNetSSL.so:
+.Bd -literal
+% fbsddeps /usr/local/lib/libPocoNetSSL.so
+/usr/local/lib/libPocoNetSSL.so:
+  expat-2.2.0_1
+  pcre-8.40
+  poco-1.7.8
+.Ed
+.Sh SEE ALSO
+.Xr mkfbsdmnfst 1 ,
+.Lk .. "Manpage Index"
+.Sh AUTHORS
+Copyright (c) 2016 Daniel W. McRobb
+.Mt dwm@mcplex.net
+.Pp
+
